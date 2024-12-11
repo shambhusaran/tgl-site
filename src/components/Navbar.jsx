@@ -1,9 +1,11 @@
-import React from "react";
-import { Link } from "react-scroll";
+import React, { useEffect } from "react";
+
+import { Link } from 'react-scroll';
 const NavBar = (props) => {
+ 
   return (
     <>
-      <nav className="bg-white h-30   flex flex-row shadow-sm w-[calc(70%)] justify-between mx-auto ">
+      <nav className="bg-white h-30   flex flex-row shadow-sm w-[calc(80%)] justify-between mx-auto ">
         <img
           src="/images/tgl.png"
           alt="tgl logo"
@@ -12,19 +14,19 @@ const NavBar = (props) => {
 
         <ul className="flex text-black   text-3xl">
           <li>
-            {" "}
+           
             <Link
               className=" h-28 flex items-center font-montserrat px-10 cursor-pointer hover:bg-primary  hover:text-white  "
-              to="dashboard" spy= {true} smooth={true} duration={500}  activeClass="active" 
+              to="dashboard" spy= {true} smooth={true} duration={300}  activeClass="active" 
             >
               Home
             </Link>
           </li>
           <li>
-            {" "}
+         
             <Link
               className=" h-28 flex items-center font-montserrat px-10 cursor-pointer  hover:bg-primary hover:text-white  "
-              to="about-us" spy= {true} smooth={true} duration={500}  activeClass="active" 
+              to="about-us" spy= {true} smooth={true} duration={300}  activeClass="active" 
             >
               About Us
             </Link>
@@ -33,16 +35,16 @@ const NavBar = (props) => {
           <li>
             <Link
               className=" h-28 flex items-center font-montserrat px-10 cursor-pointer hover:bg-primary hover:text-white "
-              to="career" spy= {true} smooth={true} duration={500}  activeClass="active" 
+              to="career" spy= {true} smooth={true} duration={300}  activeClass="active" 
             >
               Career
             </Link>
           </li>
           <li>
-            {" "}
+             
             <Link
               className=" h-28 flex items-center font-montserrat px-10 cursor-pointer hover:bg-primary hover:text-white "
-              to="contact-us" spy= {true} smooth={true} duration={500}  activeClass="active" 
+              to="contact-us" spy= {true} smooth={true} duration={300}  activeClass="active" 
             >
               Contact Us
             </Link>
