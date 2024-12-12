@@ -38,7 +38,7 @@ const About = () => {
 
 
       <OurServices/>
-      <FounderWords/>
+      {/* <FounderWords/> */}
     </div>
   );
 };

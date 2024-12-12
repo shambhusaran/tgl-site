@@ -2,7 +2,7 @@ import React from "react";
 
 const FounderWords = () => {
   return (
-    <div className=" w-[calc(70%)] mx-auto mt-40 mb-40">
+    <div className=" w-[calc(70%)] mx-auto mt-40 ">
       <div className="flex flex-col items-center">
         <p className="text-7xl font-montserrat text-primary font-bold  ">
           Words From our Founder

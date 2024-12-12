@@ -19,7 +19,7 @@ const OurServices = () => {
             <h2 className="font-montserrat text-4xl font-semibold">
               Web Development
             </h2>
-            <p className="font-satoshi text-2xl mt-2">
+            <p className="font-montserrat text-2xl mt-2">
             Build high-performance websites that captivate your audience. Our web development team delivers pixel-perfect solutions.
             </p>
           </div>
@@ -34,7 +34,7 @@ const OurServices = () => {
             <h2 className="font-montserrat text-4xl font-semibold">
               Mobile App Development
             </h2>
-            <p className="font-satoshi text-2xl mt-2">
+            <p className="font-montserrat text-2xl mt-2">
             Transform your ideas into reality. Our expert team builds high-performance mobile apps tailored to your needs.
             </p>
           </div>
@@ -49,7 +49,7 @@ const OurServices = () => {
             <h2 className="font-montserrat text-4xl font-semibold">
               Networking and Security Services
             </h2>
-            <p className="font-satoshi text-2xl mt-2">
+            <p className="font-montserrat text-2xl mt-2">
             Secure your digital infrastructure. Our network experts provide robust solutions to safeguard your business.
             </p>
           </div>
@@ -64,7 +64,7 @@ const OurServices = () => {
             <h2 className="font-montserrat text-4xl font-semibold">
               UI/UX Development
             </h2>
-            <p className="font-satoshi text-2xl mt-2 ">
+            <p className="font-montserrat text-2xl mt-2 ">
             Elevate your brand with cutting-edge UI/UX design. We craft beautiful and functional digital products.
             </p>
           </div>
