@@ -1,0 +1,10 @@
+---
+version: 1
+deployment:
+  tasks:
+    - execute:
+        command: |
+          cd /home/tgltechn/public_html 
+          git pull origin main 
+          npm install 
+          npm run build
