@@ -11,7 +11,7 @@ const Career = () => {
         className="bg-cover absolute  w-full  h-[calc(60vh)] opacity-50"
         style={{ backgroundImage: `url("/images/group.jpg")` }}
       ></div>
-      <div className="absolute inset-0  w-full  h-[calc(60vh)] bg-gray-950 opacity-25"></div>
+      <div className="absolute inset-0  w-full  h-[calc(60vh)] bg-secondary/20 backdrop-blur-sm"></div>
       <div className=" relative z-100 w-[calc(70%)] mx-auto ">
         <div className="  w-6/7 flex flex-col  mx-auto  h-[calc(60vh)] items-center  justify-center">
           <h1 className="  text-7xl font-montserrat text-primary font-bold mb-12 ">
