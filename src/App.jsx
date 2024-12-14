@@ -1,9 +1,9 @@
 
-import HomePage from './components/HomePage'
-import NavBar from './components/Navbar'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Career from './pages/Career'
+import HomePage from './components/HomePage.jsx'
+import NavBar from './components/Navbar.jsx'
+import About from './pages/About.jsx'
+import Contact from './pages/Contact.jsx'
+import Career from './pages/Career.jsx'
 
 
 function App() {
