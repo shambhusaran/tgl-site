@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col items-start justify-center ">
               <p className="font-montserrat text-3xl text-white mb-6 font-semibold">
-                {" "}
+               
                 Quick Links
               </p>
               <p className="font-montserrat text-2xl mb-4 text-white">Home</p>
@@ -34,11 +34,11 @@ const Footer = () => {
 
             <div className="flex flex-col items-start justify-center ">
               <p className="font-montserrat text-3xl text-white mb-6 font-semibold">
-                {" "}
+            
                 Connect With Us
               </p>
               <p className="font-montserrat text-2xl mb-4 text-white flex items-center">
-                {" "}
+             
                 <FaPhoneAlt className="mr-4" />
                 9866011661
               </p>
@@ -46,7 +46,7 @@ const Footer = () => {
                 <MdEmail className="mr-4" /> saranshambhuparajuli@gmail.com
               </p>
               <p className="font-montserrat text-2xl mb-4 text-white flex items-center">
-                {" "}
+               
                 <FaMapLocationDot className="mr-4" />
                 Kadaghari-9, Kathmandu
               </p>
