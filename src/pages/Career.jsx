@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-scroll";
-import Opening from "../components/Opening";
+import Opening from "../components/Opening.jsx";
 
 const Career = () => {
   return (
