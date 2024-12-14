@@ -8,7 +8,7 @@ const FounderWords = () => {
           Words From our Founder
         </p>
         <div className=" grid grid-cols-2 mt-16 gap-12">
-          <div className="">
+          <div >
             <div className=" h-64 w-64 bg-slate-100 rounded-3xl justify-self-center mb-4">
               <img
                 alt="founder-img"
