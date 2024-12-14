@@ -15,14 +15,10 @@ jobs:
         run: npm run build
         env:
           CI: false
-      - name: Deploy to cpanel
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           ftp-server: ftp.tgltechnology.com
           ftp-username: tgltechnology@tgltechnology.com
           ftp-password: ${{ secrets.FTP_PASSWORD }}
           local-dir: build/
-          # Specific configuration for your deployment platform
-          # Example for Netlify:
-          #   token: ${{ secrets.NETLIFY_TOKEN }}
-          #   site_id: ${{ secrets.NETLIFY_SITE_ID }}
