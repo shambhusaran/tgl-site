@@ -18,7 +18,6 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          ftp-server: ftp.tgltechnology.com
-          ftp-username: tgltechnology@tgltechnology.com
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: build/
+          server: ftp.tgltechnology.com
+          username: tgltechnology@tgltechnology.com
+          password: ${{ secrets.FTP_PASSWORD }}
