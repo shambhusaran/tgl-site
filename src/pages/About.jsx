@@ -1,6 +1,6 @@
 import React from "react";
-import OurServices from "../components/OurServices";
-import FounderWords from "../components/FounderWords";
+import OurServices from "../components/OurServices.jsx";
+import FounderWords from "../components/FounderWords.jsx";
 
 const About = () => {
   return (
