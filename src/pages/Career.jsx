@@ -28,7 +28,6 @@ const Career = () => {
               to="openings"
             >
               <p className="items-center text-white font-montserrat text-2xl col-span-5">
-                {" "}
                 Check Current Openings
               </p>
               <FaArrowRight className="self-center text-white font-montserrat text-2xl  col-span-1" />
