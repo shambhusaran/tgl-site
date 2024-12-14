@@ -1,0 +1,28 @@
+name: Deploy tgl site in cpanel
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: npm install
+      - name: Build the App
+        run: npm run build
+        env:
+          CI: false
+      - name: Deploy to cpanel
+        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        with:
+          ftp-server: ftp.tgltechnology.com
+          ftp-username: tgltechnology@tgltechnology.com
+          ftp-password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: build/
+          # Specific configuration for your deployment platform
+          # Example for Netlify:
+          #   token: ${{ secrets.NETLIFY_TOKEN }}
+          #   site_id: ${{ secrets.NETLIFY_SITE_ID }}
