@@ -13,7 +13,7 @@ const About = () => {
           <h1 className="font-montserrat text-6xl sm:text-7xl mt-4 font-bold text-primary">
             Who We Are
           </h1>
-          <div className="grid md:grid-cols-2 gap-8 mt-16">
+          <div className="grid md:grid-cols-2 gap-8 mt-16 ">
             <img
               src="/images/who-we-are.jpg"
               alt="who-we-are.jpg"
