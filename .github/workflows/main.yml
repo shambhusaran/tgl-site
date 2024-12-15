@@ -22,4 +22,3 @@ jobs:
           username: deploy@tgltechnology.com
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dist
-          verbose: true
