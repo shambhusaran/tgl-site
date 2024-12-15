@@ -13,11 +13,12 @@ jobs:
         run: npm install
       - name: Build the App
         run: npm run build
-        env:
-          CI: false
+      #  env:
+          # CI: false
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ftp.tgltechnology.com
           username: deploy@tgltechnology.com
           password: ${{ secrets.FTP_PASSWORD }}
+          verbose: true
