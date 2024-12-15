@@ -5,7 +5,7 @@ import Opening from "../components/Opening.jsx";
 
 const Career = () => {
   return (
-    <div id="career" className=" relative bg-cover  mt-40 mb-40">
+    <div id="career" className=" relative bg-cover  mt-40 mb-40 ">
       {/* <div className= "bg-cover h-screen absolute inset-0 opacity-15" style={{backgroundImage : `url("/images/zig-zag-texture.jpg")`}}></div> */}
       <div
         className="bg-cover absolute  w-full  h-[calc(60vh)] opacity-50"
