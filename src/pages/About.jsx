@@ -5,21 +5,21 @@ import FounderWords from "../components/FounderWords.jsx";
 const About = () => {
   return (
     <div id="about-us">
-      <div className="  w-[calc(70%)]  mx-auto">
+      <div className=" w-[calc(90%)] sm:w-[calc(70%)]  mx-auto">
         <div className="w-6/7 mx-auto flex flex-col items-center">
-          <div className="mt-20 font-montserrat text-5xl text-secondary ">
+          <div className="mt-20 font-montserrat text-4xl sm:text-5xl text-secondary ">
             ABOUT US
           </div>
-          <h1 className="font-montserrat text-7xl mt-4 font-bold text-primary">
+          <h1 className="font-montserrat text-6xl sm:text-7xl mt-4 font-bold text-primary">
             Who We Are
           </h1>
-          <div className="grid grid-cols-2 gap-8 mt-16">
+          <div className="grid md:grid-cols-2 gap-8 mt-16">
             <img
               src="/images/who-we-are.jpg"
               alt="who-we-are.jpg"
-              className="h-[calc(50vh)] w-full self-center   "
+              className=" sm:h-[calc(50vh)] w-full  self-center   "
             />
-            <p className=" text-justify font-montserrat text-4xl">
+            <p className=" text-justify sm:text-justify font-montserrat text-3xl sm:text-4xl">
               A company founded in 2022 with the intention of establishing a
               greater connection between people and technology. Its objective is
               to gain the trust of people through technological innovation so

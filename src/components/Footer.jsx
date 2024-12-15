@@ -9,17 +9,17 @@ import { FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <div className="w-full h-[calc(40vh)] bg-primary">
-        <div className=" relative z-100 w-[calc(70%)] mx-auto ">
-          <div className="flex  justify-between h-[calc(40vh)] ">
+      <div className="w-full  sm:h-[calc(40vh)] bg-primary">
+        <div className=" relative z-100 sm:px-20 md:w-[calc(70%)] mx-auto ">
+          <div className="flex flex-col sm:flex-row justify-between  sm:h-[calc(40vh)] ">
             <div className="flex items-center justify-center ">
               <img
-                className="h-72 "
+                className=" h-56 sm:h-72 "
                 src="/images/tgl-all-white.png"
                 alt="tgl-all-white"
               />
             </div>
-            <div className="flex flex-col items-start justify-center ">
+            <div className="flex mx-auto sm:mx-0  flex-col sm:items-start justify-center items-center ">
               <p className="font-montserrat text-3xl text-white mb-6 font-semibold">
                
                 Quick Links
@@ -32,7 +32,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="flex flex-col items-start justify-center ">
+            <div className="flex mx-auto sm:mx-0 flex-col items-center sm:items-start justify-center mt-6 sm:mt-0 mb-12 sm:mb-0">
               <p className="font-montserrat text-3xl text-white mb-6 font-semibold">
             
                 Connect With Us
@@ -55,16 +55,16 @@ const Footer = () => {
         </div>
       </div>
       <div className=" bg-secondary/70">
-        <div className=" w-[calc(70%)] mx-auto py-6  flex justify-between ">
+        <div className=" sm:w-[calc(70%)] sm:mx-auto px-7 sm:px-0 py-6  flex justify-between ">
        
             
-            <p className="text-2xl font-satoshi text-white ">
+            <p className=" text-xl sm:text-2xl font-satoshi text-white ">
               © 2025 TGL Technology. All Rights Reserved.
             </p>
-            <div className="flex ">
-            <FaFacebook className="text-4xl   text-white"/>
-            <FaLinkedin className="text-4xl ml-4  text-white" />
-            <FaWhatsapp className="text-4xl ml-4  text-white" />
+            <div className="flex  ">
+            <FaFacebook className="text-2xl sm:text-4xl   text-white"/>
+            <FaLinkedin className=" text-2xl sm:text-4xl ml-4  text-white" />
+            <FaWhatsapp className=" text-2xl sm:text-4xl ml-4  text-white" />
             </div>
          
         </div>

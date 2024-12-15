@@ -5,14 +5,14 @@ const NavBar = (props) => {
  
   return (
     <>
-      <nav className="bg-white h-30   flex flex-row shadow-sm w-[calc(80%)] justify-between mx-auto ">
+      <nav className="  bg-white h-30   flex flex-row  w-[calc(80%)] justify-between mx-auto ">
         <img
           src="/images/tgl.png"
           alt="tgl logo"
           className="w-32 h-24 self-center py-2"
         />
 
-        <ul className="flex text-black   text-3xl">
+        <ul className="hidden md:flex md:text-black   md:text-3xl ">
           <li>
            
             <Link
