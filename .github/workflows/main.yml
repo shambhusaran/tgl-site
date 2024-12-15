@@ -21,3 +21,4 @@ jobs:
           server: ftp.tgltechnology.com
           username: deploy@tgltechnology.com
           password: ${{ secrets.FTP_PASSWORD }}
+          source: dist
