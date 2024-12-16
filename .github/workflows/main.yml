@@ -30,4 +30,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           ftp_remote_dir: public_html
           protocol: ftps
-          source_directory: ./dist/
+          source_directory: dist
