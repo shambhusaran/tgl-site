@@ -15,9 +15,9 @@ jobs:
         run: npm run build
       - name: check contents
         run: |
-          if [ -d "your_folder_name" ]; then
+          if [ -d "dist" ]; then
             echo "Folder exists"
-            ls -la your_folder_name
+            ls -la dist
           else 
             echo "Folder does not exist"
           fi
