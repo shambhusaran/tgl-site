@@ -21,5 +21,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
           local-dir: ./dist/
+          exclude: |
+            .ftp-deploy-sync-state.json
     
          
