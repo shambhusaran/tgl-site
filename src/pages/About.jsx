@@ -5,7 +5,7 @@ import FounderWords from "../components/FounderWords.jsx";
 const About = () => {
   return (
     <div id="about-us">
-      <div className=" w-[calc(90%)] sm:w-[calc(70%)]  mx-auto">
+      <div className=" w-[calc(90%)] sm:w-[calc(70%)]  mx-auto ">
         <div className="w-6/7 mx-auto flex flex-col items-center">
           <div className="mt-20 font-montserrat text-4xl sm:text-5xl text-secondary">
             ABOUT US
