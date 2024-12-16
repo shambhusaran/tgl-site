@@ -20,6 +20,6 @@ jobs:
           username: deploy@tgltechnology.com
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ftps
-          local-dir: ./dist
-          server-dir: ./public_html
+          local-dir: ./dist/
+          server-dir: ./public_html/
          
