@@ -12,7 +12,7 @@ const NavBar = (props) => {
           className="w-32 h-24 self-center py-2"
         />
 
-        <ul className="hidden md:flex md:text-black   md:text-3xl ">
+        <ul className="hidden md:flex md:text-black   md:text-3xl">
           <li>
            
             <Link
