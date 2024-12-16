@@ -13,21 +13,13 @@ jobs:
         run: npm install
       - name: Build the App
         run: npm run build
-      - name: check contents
-        run: |
-          if [ -d "dist" ]; then
-            echo "Folder exists"
-            ls -la dist
-          else 
-            echo "Folder does not exist"
-          fi
-          
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ftp.tgltechnology.com
           username: deploy@tgltechnology.com
           password: ${{ secrets.FTP_PASSWORD }}
-          ftp_remote_dir: public_html
           protocol: ftps
-          source_directory: dist
+          local-dir: ./dist
+          server-dir: ./public_html
+         
