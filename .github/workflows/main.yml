@@ -22,4 +22,4 @@ jobs:
           username: deploy@tgltechnology.com
           password: ${{ secrets.FTP_PASSWORD }}
           ftp_remote_dir: public_html
-          source: ./dist/
+          source_directory: ./dist/
