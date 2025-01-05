@@ -1,9 +1,8 @@
 
 import HomePage from './components/HomePage.jsx'
-import NavBar from './components/Navbar.jsx'
-import About from './pages/About.jsx'
-import Contact from './pages/Contact.jsx'
-import Career from './pages/Career.jsx'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Login from './pages/Login.jsx'
+import { UIRoutes } from './routes/UIRoutes.jsx';
 
 
 function App() {
@@ -11,7 +10,18 @@ function App() {
 
 
   return (
-    <HomePage/>
+    <>
+    <UIRoutes/>
+    </>
+
+//     <Router>
+// <Routes>
+//   <Route path='/' element={<HomePage/>}/>
+//   <Route path='/login' element={<Login/>}/>
+// </Routes>
+
+//     </Router>
+    // <HomePage/>
 
   )
 }
