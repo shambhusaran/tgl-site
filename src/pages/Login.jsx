@@ -29,7 +29,8 @@ const Login = () => {
 
     if(email==="superadmin@tgltechnology.com" && password ==="superAdmin321##"){
 
-      navigate('/')
+      console.log("aaaaaaa")
+      // navigate('/')
       
     }
   };
@@ -56,7 +57,7 @@ const Login = () => {
                   <img className="bg-cover bg-no-repeat" src="images/NP.png" />
                 </div>
 
-                <form className="grid grid-cols-1 mt-2" id="login-form" onSubmit={handleSubmit}>
+                <form className="grid grid-cols-1 mt-2" name="login-form" onSubmit={handleSubmit}>
                   <DropDown value={role} handleChange={handleRole}/>
                   <TextField forWhich={"email"} label={"Email"} type= {"email"} value={email} handleChange={handleEmail} />
                   <TextField forWhich={"password"} label={"Password"} type={"password"} value={password} handleChange={handlePassword}/>
