@@ -27,7 +27,7 @@ const Login = () => {
     // Handle form submission here (e.g., send data to server)
    
 
-    if(email=="superadmin@tgltechnology.com" && password =="superAdmin321##"){
+    if(email==="superadmin@tgltechnology.com" && password ==="superAdmin321##"){
 
       navigate('/')
       
