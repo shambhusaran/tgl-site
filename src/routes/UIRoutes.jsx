@@ -9,9 +9,10 @@ export const UIRoutes=()=>{
         <BrowserRouter>
 
         <Routes>
-            <Route path="/" element={<HomePage/>}>
-            <Route path="/login" element={<Login/>}/>
-            </Route>
+        <Route exact path="/login" element={<Login/>}/>
+            <Route path="/" element={<HomePage/>}/>
+            
+            
         
     
         </Routes>

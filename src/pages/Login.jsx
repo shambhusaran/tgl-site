@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import TextField from "../components/TextField";
 import DropDown from "../components/DropDown";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
 
@@ -19,19 +20,17 @@ const Login = () => {
     setRole(event.target.value);
   };
 
+  const navigate = useNavigate()
 
   const handleSubmit = (event) => {
     event.preventDefault(); 
     // Handle form submission here (e.g., send data to server)
    
-    console.log('Email:', email);
-     
-    console.log('Password:', password);
-     
-    console.log('Role:', role);
 
-    if(email==="superadmin@gmail.com" && password ==="superAdmin123#"){
-      console.log("HomePage")
+    if(email=="superadmin@tgltechnology.com" && password =="superAdmin321##"){
+
+      navigate('/')
+      
     }
   };
   return (
@@ -57,7 +56,7 @@ const Login = () => {
                   <img className="bg-cover bg-no-repeat" src="images/NP.png" />
                 </div>
 
-                <form className="grid grid-cols-1 mt-2" onSubmit={handleSubmit}>
+                <form className="grid grid-cols-1 mt-2" id="login-form" onSubmit={handleSubmit}>
                   <DropDown value={role} handleChange={handleRole}/>
                   <TextField forWhich={"email"} label={"Email"} type= {"email"} value={email} handleChange={handleEmail} />
                   <TextField forWhich={"password"} label={"Password"} type={"password"} value={password} handleChange={handlePassword}/>
