@@ -38,6 +38,9 @@ const Login = () => {
       if(data.token){
         navigate('/')
       }
+      else{
+        window.alert("incorrect Password")
+      }
       // navigate('/')
       
     
