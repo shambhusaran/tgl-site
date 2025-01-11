@@ -26,6 +26,8 @@ const Login = () => {
     event.preventDefault(); 
     // Handle form submission here (e.g., send data to server)
 
+    try{
+
       const response = await fetch('https://ecommerce.tgltechnology.com/api/auth/login', { 
         method: 'POST',
         headers: {
@@ -36,12 +38,17 @@ const Login = () => {
       const data = await response.json(); 
       console.log(data)
       if(data.token){
+
         navigate('/')
       }
       else{
         window.alert("incorrect Password")
       }
       // navigate('/')
+    }
+    catch(e){
+      console.log("Login Failed")
+    }
       
     
   };
