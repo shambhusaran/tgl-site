@@ -36,7 +36,7 @@ const Login = () => {
         body: JSON.stringify({ email, password }), 
       });
       const data = await response.json(); 
-      console.log(data)
+      console.log(data.token)
       if(data.token){
 
         navigate('/')
