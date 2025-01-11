@@ -22,17 +22,25 @@ const Login = () => {
 
   const navigate = useNavigate()
 
-  const handleSubmit = (event) => {
+  const handleSubmit =async (event) => {
     event.preventDefault(); 
     // Handle form submission here (e.g., send data to server)
-   
 
-    if(email==="superadmin@tgltechnology.com" && password ==="superAdmin321##"){
-
-      console.log("aaaaaaa")
+      const response = await fetch('https://ecommerce.tgltechnology.com/api/auth/login', { 
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }), 
+      });
+      const data = await response.json(); 
+      console.log(data)
+      if(data){
+        navigate('/')
+      }
       // navigate('/')
       
-    }
+    
   };
   return (
     <div>
